@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pagman.android.paypaltest.MainActivity"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="There are 2 slots available near you !"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/name"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="14dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parkease"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:id="@+id/name"
+        />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="PAY"
+        android:onClick="pay"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btt"
+        android:textColor="#494949"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="membership"
+        android:onClick="membership"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:id="@+id/btt1"
+        android:textColor="#494949"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="feedback"
+        android:onClick="pay"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btt2"
+        android:textColor="#494949"/>
+
+
+</RelativeLayout>
